@@ -1,0 +1,59 @@
+﻿@model Myweb.Models.RateAll
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RateAll</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AScore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BScore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CScore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

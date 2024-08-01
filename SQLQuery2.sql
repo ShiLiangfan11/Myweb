@@ -1,0 +1,8 @@
+﻿CREATE TABLE rateany (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    UserId NVARCHAR(128) NOT NULL,
+    Score INT NOT NULL,
+    Comment NVARCHAR(MAX),
+    CreatedAt DATETIME NOT NULL DEFAULT GETDATE(),
+    FOREIGN KEY (UserId) REFERENCES AspNetUsers(Id)
+);
